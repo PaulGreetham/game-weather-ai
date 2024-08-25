@@ -1,0 +1,40 @@
+@import '../../styles/_variables';
+
+.header {
+  background-color: $brand-yellow; // Use your primary brand color
+  padding: $spacing-md; // Use spacing from your variables
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; // Positions the logo left and button right
+  align-items: center;
+  max-width: 1200px; // Center the content with a max width
+  margin: 0 auto; // Center the container horizontally
+}
+
+.icon {
+  height: 40px; // Adjust this size according to your design
+}
+
+.auth-buttons {
+  .sign-in {
+    background-color: white; // Background for the button
+    color: $brand-yellow; // Text color for the button
+    border: none;
+    padding: $spacing-xs $spacing-sm; // Padding inside the button
+    border-radius: $border-radius-sm; // Use your border radius variable
+    font-family: $font-primary; // Use your secondary font
+    font-size: 1.2rem;
+    font-weight: 500; // Set the font weight
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($brand-yellow, 10%); // Darken the background on hover
+      color: white; // Change text color on hover
+    }
+  }
+}
+

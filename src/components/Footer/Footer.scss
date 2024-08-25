@@ -1,0 +1,34 @@
+// src/components/Footer.scss
+
+@import '../../styles/_variables'; // Import your variables if needed
+
+.footer {
+  background-color: $brand-yellow; // Same background as header
+  padding: $spacing-md; // Same padding as header
+  color: white;
+  position: fixed; // Fix the footer at the bottom
+  bottom: 0; // Align to the bottom
+  width: 100%; // Full width
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; // Space the icons evenly
+  align-items: center;
+  max-width: 1200px; // Same max width as header
+  margin: 0 auto; // Center the container
+}
+
+.footer-icon {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: lighten($brand-yellow, 20%);
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'variables';
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+    background-image: linear-gradient(
+    to right bottom,
+    rgb($brand-green-light, 0.8),
+    rgb($brand-green-dark, 0.8)),
+    url('../assets/photos/background.jpg');
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    color: $light-color; /* Your text color */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Ensure padding and borders are included in the element's total width and height
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; // Prevent horizontal scrolling
+}
