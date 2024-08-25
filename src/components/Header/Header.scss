@@ -1,7 +1,6 @@
 @import '../../styles/_variables';
 
 .header {
-  background-color: $brand-yellow; // Use your primary brand color
   padding: $spacing-md; // Use spacing from your variables
   color: white;
 }
@@ -20,8 +19,8 @@
 
 .auth-buttons {
   .sign-in {
-    background-color: white; // Background for the button
-    color: $brand-yellow; // Text color for the button
+    background-color: $brand-yellow; // Background for the button
+    color: $light-color; // Text color for the button
     border: none;
     padding: $spacing-xs $spacing-sm; // Padding inside the button
     border-radius: $border-radius-sm; // Use your border radius variable

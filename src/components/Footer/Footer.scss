@@ -3,7 +3,6 @@
 @import '../../styles/_variables'; // Import your variables if needed
 
 .footer {
-  background-color: $brand-yellow; // Same background as header
   padding: $spacing-md; // Same padding as header
   color: white;
   position: fixed; // Fix the footer at the bottom
@@ -21,6 +20,7 @@
 
 .footer-icon {
   color: white;
+  height: 40px;
   text-decoration: none;
   transition: color 0.3s;
 

@@ -2,6 +2,8 @@ import React from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFutbol } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Header: React.FC = () => {
@@ -12,8 +14,7 @@ const Header: React.FC = () => {
           <FontAwesomeIcon icon={faFutbol} className="icon"/>
         </div>
         <div className="auth-buttons">
-          <button className="sign-in">Sign In</button>
-        </div>
+          <FontAwesomeIcon icon={faRightFromBracket} className="icon" />       </div>
       </div>
     </header>
   );
