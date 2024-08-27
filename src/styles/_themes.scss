@@ -1,38 +1,26 @@
 // Light Theme Variables
 $light-background-color: #ffffff;
 $light-text-color: #000000;
-$light-primary-color: $brand-green-dark;
-$light-secondary-color: $brand-green-light;
-$light-accent-color: $brand-yellow;
-$light-hover-text-color: lighten($light-text-color, 20%);
-$light-overlay-color: rgba(193, 242, 176, 0.8); // Light green overlay
+$light-gradient-start: rgba(137, 194, 118, 0.8); // Light green start
+$light-gradient-end: rgba(57, 153, 24, 0.8); // Dark green end
 
 // Dark Theme Variables
 $dark-background-color: #1e1e1e;
 $dark-text-color: #f0f0f0;
-$dark-primary-color: #4a4a4a;
-$dark-secondary-color: #2d2d2d;
-$dark-accent-color: #f4ce14;
-$dark-hover-text-color: lighten($dark-text-color, 20%);
-$dark-overlay-color: rgba(57, 153, 24, 0.8); // Dark green overlay
+$dark-gradient-start: rgba(5, 16, 31, 0.8);
+$dark-gradient-end: rgba(18, 61, 113, 0.8); // Dark grey end
 
 // Set Theme Colors Based on Data Attribute
 :root {
-  --background-color: $light-background-color;
-  --text-color: $light-text-color;
-  --primary-color: $light-primary-color;
-  --secondary-color: $light-secondary-color;
-  --accent-color: $light-accent-color;
-  --hover-text-color: $light-hover-text-color;
-  --overlay-color: $light-overlay-color;
+  --background-color: #{$light-background-color};
+  --text-color: #{$light-text-color};
+  --gradient-start: #{$light-gradient-start};
+  --gradient-end: #{$light-gradient-end};
 }
 
 [data-theme='dark'] {
-  --background-color: $dark-background-color;
-  --text-color: $dark-text-color;
-  --primary-color: $dark-primary-color;
-  --secondary-color: $dark-secondary-color;
-  --accent-color: $dark-accent-color;
-  --hover-text-color: $dark-hover-text-color;
-  --overlay-color: $dark-overlay-color;
+  --background-color: #{$dark-background-color};
+  --text-color: #{$dark-text-color};
+  --gradient-start: #{$dark-gradient-start};
+  --gradient-end: #{$dark-gradient-end};
 }
