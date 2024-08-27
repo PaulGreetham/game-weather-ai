@@ -1,39 +1,62 @@
-@import '../../styles/_variables';
+@import '../../styles/_variables'; // Import your variables file
 
 .header {
-  padding: $spacing-md; // Use spacing from your variables
-  color: white;
-}
+  padding: $spacing-md;
+  color: $light-color;
 
-.header-container {
-  display: flex;
-  justify-content: space-between; // Positions the logo left and button right
-  align-items: center;
-  max-width: 1200px; // Center the content with a max width
-  margin: 0 auto; // Center the container horizontally
-}
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 
-.icon {
-  height: 40px; // Adjust this size according to your design
-}
+    .logo-icon,
+    .icon {
+      height: 40px;
+      width: 40px;
+      color: $light-color;
+    }
 
-.auth-buttons {
-  .sign-in {
-    background-color: $brand-yellow; // Background for the button
-    color: $light-color; // Text color for the button
-    border: none;
-    padding: $spacing-xs $spacing-sm; // Padding inside the button
-    border-radius: $border-radius-sm; // Use your border radius variable
-    font-family: $font-primary; // Use your secondary font
-    font-size: 1.2rem;
-    font-weight: 500; // Set the font weight
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    .header-buttons {
+      display: flex;
+      align-items: center;
+      gap: $spacing-md;
 
-    &:hover {
-      background-color: darken($brand-yellow, 10%); // Darken the background on hover
-      color: white; // Change text color on hover
+      .theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: lighten($light-color, 20%);
+        }
+
+        .icon {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      .auth-buttons {
+        display: flex;
+        background: none;
+        border: none;
+        align-items: center;
+
+        .icon {
+          margin-left: $spacing-sm;
+          transition: color 0.3s ease;
+          width: 40px;
+          height: 40px;
+
+          &:hover {
+            color: lighten($light-color, 20%);
+          }
+        }
+      }
     }
   }
 }
-
