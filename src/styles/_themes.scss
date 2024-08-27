@@ -1,14 +1,14 @@
 // Light Theme Variables
 $light-background-color: #ffffff;
 $light-text-color: #000000;
-$light-gradient-start: rgba(137, 194, 118, 0.8); // Light green start
-$light-gradient-end: rgba(57, 153, 24, 0.8); // Dark green end
+$light-gradient-start: rgba(49, 141, 19, 0.8);
+$light-gradient-end: rgba(112, 190, 86, 0.8);
 
 // Dark Theme Variables
 $dark-background-color: #1e1e1e;
 $dark-text-color: #f0f0f0;
 $dark-gradient-start: rgba(5, 16, 31, 0.8);
-$dark-gradient-end: rgba(18, 61, 113, 0.8); // Dark grey end
+$dark-gradient-end: rgba(18, 61, 113, 0.8);
 
 // Set Theme Colors Based on Data Attribute
 :root {
